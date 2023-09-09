@@ -4,15 +4,15 @@ body, h1, h2, p, a {
     padding: 0;
 }
 
-/* Set a white background for the entire page */
+/* Set the background color */
 body {
-    background-color: #fff;
-    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+    font-family: "Roboto", sans-serif; /* Use the Roboto font */
 }
 
 /* Style the header */
 header {
-    background-color: #007bff;
+    background-color: #4b0082; /* Eggplant purple */
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -23,7 +23,7 @@ header {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #fff; /* White background */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -37,7 +37,7 @@ h1 {
 
 h2 {
     font-size: 24px;
-    color: #007bff; /* Blue color */
+    color: #0000cd; /* Royal blue */
     margin-top: 20px;
 }
 
@@ -45,12 +45,12 @@ h2 {
 p {
     font-size: 18px;
     line-height: 1.6;
-    color: #666; /* Medium gray color */
+    color: #333; /* Dark gray color */
 }
 
 /* Style links */
 a {
-    color: #007bff; /* Blue color */
+    color: #008080; /* Teal */
     text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ a:hover {
 /* Add a subtle hover effect to links */
 a:focus {
     outline: none;
-    background-color: #007bff;
+    background-color: #008080; /* Teal */
     color: #fff;
     padding: 2px 4px;
     border-radius: 4px;
