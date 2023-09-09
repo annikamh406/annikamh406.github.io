@@ -12,8 +12,8 @@ body {
 
 /* Style the header */
 header {
-    background-color: #4b0082; /* Eggplant purple */
-    color: #fff;
+    background-color: #dadada; /* Eggplant purple */
+    color: #073763;
     text-align: center;
     padding: 20px;
 }
@@ -31,13 +31,13 @@ header {
 /* Style headings */
 h1 {
     font-size: 36px;
-    color: #333; /* Dark gray color */
+    color: #073763; /* Dark blue color */
     margin-bottom: 20px;
 }
 
 h2 {
     font-size: 24px;
-    color: #0000cd; /* Royal blue */
+    color: #0b5394; /* Royal blue */
     margin-top: 20px;
 }
 
@@ -50,7 +50,7 @@ p {
 
 /* Style links */
 a {
-    color: #008080; /* Teal */
+    color: #045050; /* Teal */
     text-decoration: none;
 }
 
