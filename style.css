@@ -45,6 +45,9 @@ header {
     text-align: center;
     padding: 1em;
     font-size: 2em;
+    display: flex;
+    justify-content: space-between; /* Positions content on the far ends */
+    align-items: center; /* Vertically aligns the elements */
 }
 
 /* Navigation */
@@ -73,7 +76,13 @@ nav a {
 .nav-bar {
     display: flex; /* Enables flexbox layout */
     justify-content: space-evenly; /* Distributes buttons with equal space */
-  }
+    gap: 16px; /* Space between buttons */
+}
+
+.name-section span {
+font-weight: bold; /* Bold font */
+font-size: 1.2em; /* Slightly larger font */
+}
 
 /* Main Content */
 .main-content {
@@ -99,6 +108,7 @@ nav a {
     justify-content: center; /* Horizontally center the content */
     align-items: center; /* Vertically center the content */
     flex-direction: column; /* Stack the content vertically */
+    margin: 20px;  /* Add margin to create white space */
   }
   
   .left-section img {
