@@ -141,7 +141,8 @@ footer {
 @media screen and (max-width: 970px) { 
     .header {
         flex-direction: column;
-        font-size: 1.5em;
+    align-items: flex-start;
+        font-size: 1em;
     }
     .research-container {
         grid-template-columns: 1fr; /* Creates a 1-column grid */
