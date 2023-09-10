@@ -72,6 +72,27 @@ nav a {
     color: #0D3455;
 }
 
+.content {
+    display: flex;  /* Use flexbox for layout */
+    align-items: flex-start;  /* Align items to the start of the flex container */
+  }
+
+.left-section {
+    flex: 1;  /* Take up 1 portion of the available space */
+    max-width: 50%;  /* Limit width to 50% of the container */
+    overflow: hidden;  /* Hide any overflowing content */
+  }
+  
+  .left-section img {
+    width: 100%;  /* Make the image responsive, taking up full width of the .left-section */
+    height: auto;  /* Maintain aspect ratio */
+  }
+  
+  .right-section {
+    flex: 1;  /* Take up 1 portion of the available space */
+    padding-left: 20px;  /* Add some padding for separation */
+  }
+
 /* Footer */
 footer {
     background-color: #2F4F4F;  /* Dark Slate Grey */
