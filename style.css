@@ -151,6 +151,11 @@ footer {
     .content {
         flex-direction: column;  /* Stack them on top of each other */
     }
+
+    .header {
+        flex-direction: column;
+        font-size: 1em;
+    }
     
     .container {
         padding: 10px;
