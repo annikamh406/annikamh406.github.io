@@ -32,18 +32,6 @@ header {
     font-size: 2em;
 }
 
-h1 {
-    font-size: 36px;
-    color: #333; /* Dark gray color */
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 24px;
-    color: #0000cd; /* Royal blue */
-    margin-top: 20px;
-}
-
 /* Navigation */
 nav {
     background-color: #1F4E60;  /* Dark Teal */
@@ -64,7 +52,13 @@ nav a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1em;
 }
+
+.nav-bar {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-evenly; /* Distributes buttons with equal space */
+  }
 
 /* Main Content */
 .main-content {
