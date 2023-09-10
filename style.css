@@ -23,6 +23,21 @@ body {
     padding: 20px;
 }
 
+.research-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Creates a 3-column grid */
+    grid-gap: 16px; /* Space between each box */
+    padding: 16px; /* Padding around the grid */
+    max-width: 90%; /* Limits the width of the container */
+    margin: auto; /* Centers the container */
+  }
+  
+  .research-box {
+    background-color: #D9D9D9; /* Slightly darker grey than the background */
+    padding: 20px; /* Inner padding for the content */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds subtle shadow for depth */
+  }
+
 /* Header */
 header {
     background-color: #0D3455;  /* Dark Blue */
@@ -81,11 +96,18 @@ nav a {
     flex: 1;  /* Take up 1 portion of the available space */
     max-width: 50%;  /* Limit width to 50% of the container */
     overflow: hidden;  /* Hide any overflowing content */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    flex-direction: column; /* Stack the content vertically */
   }
   
   .left-section img {
     width: 70%;  /* Make the image responsive, taking up full width of the .left-section */
     height: auto;  /* Maintain aspect ratio */
+  }
+
+  figure {
+    text-align: center; /* Centers the caption text */
   }
   
   .right-section {
