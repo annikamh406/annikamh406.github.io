@@ -25,7 +25,7 @@ body {
 
 .research-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Creates a 3-column grid */
+    grid-template-columns: 1fr 1fr; /* Creates a 2-column grid */
     grid-gap: 16px; /* Space between each box */
     padding: 16px; /* Padding around the grid */
     max-width: 90%; /* Limits the width of the container */
@@ -121,7 +121,7 @@ font-size: 1.2em; /* Slightly larger font */
   }
   
   .right-section {
-    flex: 1;  /* Take up 1 portion of the available space */
+    flex: 2;  /* Take up 1 portion of the available space */
     padding-left: 100px;  /* Add some padding for separation */
     padding-top: 100px;
   }
