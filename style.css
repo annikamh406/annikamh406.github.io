@@ -7,7 +7,7 @@
 
 /* Body and Global Settings */
 body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #F4F4F4;  /* Light Grey Background */
     color: #0D3455;  /* Dark Blue Text */
     line-height: 1.6;
@@ -30,6 +30,18 @@ header {
     text-align: center;
     padding: 1em;
     font-size: 2em;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333; /* Dark gray color */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0000cd; /* Royal blue */
+    margin-top: 20px;
 }
 
 /* Navigation */
