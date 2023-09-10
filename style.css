@@ -1,72 +1,79 @@
-/* Reset some default styles */
-body, h1, h2, p, a {
+/* Reset some default browser styles */
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
 
-/* Set the background color */
+/* Apply a background color to the whole page */
 body {
-    background-color: #f5f5f5; /* Light gray background */
-    font-family: "Roboto", sans-serif; /* Use the Roboto font */
+    background-color: #F3F4F6;  /* Light Gray */
+    font-family: 'Arial', sans-serif;  /* Professional sans-serif font */
+    color: #1D2D44;  /* Dark Blue Text */
+    line-height: 1.6;
+    font-size: 18px;
 }
 
-/* Style the header */
-header {
-    background-color: #dadada; /* Eggplant purple */
-    color: #073763;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Style the main content container */
+/* Add some padding and center the content */
 .container {
     max-width: 800px;
-    margin: 20px auto;
+    margin: auto;
     padding: 20px;
-    background-color: #fff; /* White background */
-    border-radius: 5px
 }
 
-/* Style headings */
-h1 {
-    font-size: 36px;
-    color: #073763; /* Dark blue color */
-    margin-bottom: 20px;
+/* Header Styles */
+header {
+    background-color: #155F4A;  /* Dark Green */
+    color: #F3F4F6;  /* Text contrast with Dark Green */
+    text-align: center;
+    padding: 1em;
 }
 
-h2 {
-    font-size: 24px;
-    color: #0b5394; /* Royal blue */
-    margin-top: 20px;
+header h1 {
+    font-size: 2em;
 }
 
-/* Style paragraphs */
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333; /* Dark gray color */
+/* Navigation Styles */
+nav {
+    text-align: center;
+    background-color: #1C5D5D;  /* Dark Teal */
+    color: #F3F4F6;  /* Text contrast with Dark Teal */
 }
 
-/* Style links */
-a {
-    color: #045050; 
+nav a {
+    padding: 14px 20px;
+    display: inline-block;
+    color: #F3F4F6;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Change color on hover */
+nav a:hover {
+    background-color: #155F4A;
+    color: #F3F4F6;
 }
 
-/* Add a subtle hover effect to links */
-a:focus {
-    outline: none;
-    background-color: #008080; /* Teal */
-    color: #fff;
-    padding: 2px 4px;
-    border-radius: 4px;
+/* Main Content */
+.main-content {
+    padding: 20px;
+    background-color: #F3F4F6;
+    color: #1D2D44;
 }
 
-/* Add a transition for smoother hover effects */
-a, button {
-    transition: all 0.3s ease;
+.main-content h2, .main-content h3 {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #155F4A;
+    color: #F3F4F6;
+    padding: 1em;
+}
+
+/* Add some responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
 }
