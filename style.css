@@ -139,6 +139,10 @@ footer {
 
 /* Responsiveness */
 @media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;  /* Stack them on top of each other */
+    }
+    
     .container {
         padding: 10px;
     }
