@@ -1,78 +1,84 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, p {
+/* Universal and Basic Styling */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Apply a background color to the whole page */
+/* Body and Global Settings */
 body {
-    background-color: #F3F4F6;  /* Light Gray */
-    font-family: 'Arial', sans-serif;  /* Professional sans-serif font */
-    color: #1D2D44;  /* Dark Blue Text */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #F4F4F4;  /* Light Grey Background */
+    color: #0D3455;  /* Dark Blue Text */
     line-height: 1.6;
     font-size: 18px;
-}
-
-/* Add some padding and center the content */
-.container {
-    max-width: 800px;
-    margin: auto;
     padding: 20px;
 }
 
-/* Header Styles */
+/* Container */
+.container {
+    max-width: 960px;
+    margin: auto;
+    background-color: #FFFFFF;  /* White */
+    padding: 20px;
+}
+
+/* Header */
 header {
-    background-color: #155F4A;  /* Dark Green */
-    color: #F3F4F6;  /* Text contrast with Dark Green */
+    background-color: #0D3455;  /* Dark Blue */
+    color: #FFFFFF;  /* White for Contrast */
+    text-align: center;
+    padding: 1em;
+    font-size: 2em;
+}
+
+/* Navigation */
+nav {
+    background-color: #1F4E60;  /* Dark Teal */
+    color: #F4F4F4;  /* Light Grey for Contrast */
     text-align: center;
     padding: 1em;
 }
 
-header h1 {
-    font-size: 2em;
-}
-
-/* Navigation Styles */
-nav {
-    text-align: center;
-    background-color: #1C5D5D;  /* Dark Teal */
-    color: #F3F4F6;  /* Text contrast with Dark Teal */
-}
-
 nav a {
-    padding: 14px 20px;
-    display: inline-block;
-    color: #F3F4F6;
+    margin: 0 15px;
+    color: #F4F4F4;
     text-decoration: none;
 }
 
-/* Change color on hover */
-nav a:hover {
-    background-color: #155F4A;
-    color: #F3F4F6;
+.nav-button {
+    background-color: #1F4E60;  /* Dark Teal */
+    color: #F4F4F4;  /* Light Grey for Contrast */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 /* Main Content */
 .main-content {
     padding: 20px;
-    background-color: #F3F4F6;
-    color: #1D2D44;
+    color: #0D3455;
 }
 
 .main-content h2, .main-content h3 {
+    margin-top: 20px;
     margin-bottom: 20px;
+    color: #0D3455;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
+    background-color: #2F4F4F;  /* Dark Slate Grey */
+    color: #F4F4F4;  /* Light Grey for Contrast */
     text-align: center;
-    background-color: #155F4A;
-    color: #F3F4F6;
     padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Add some responsiveness */
-@media (max-width: 600px) {
+/* Responsiveness */
+@media (max-width: 768px) {
     .container {
         padding: 10px;
     }
