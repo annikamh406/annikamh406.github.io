@@ -49,7 +49,7 @@ nav a {
 .nav-button {
     background-color: #1F4E60;  /* Dark Teal */
     color: #F4F4F4;  /* Light Grey for Contrast */
-    padding: 10px 20px;
+    padding: 5px 10px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1em;
@@ -84,13 +84,14 @@ nav a {
   }
   
   .left-section img {
-    width: 100%;  /* Make the image responsive, taking up full width of the .left-section */
+    width: 70%;  /* Make the image responsive, taking up full width of the .left-section */
     height: auto;  /* Maintain aspect ratio */
   }
   
   .right-section {
     flex: 1;  /* Take up 1 portion of the available space */
-    padding-left: 20px;  /* Add some padding for separation */
+    padding-left: 100px;  /* Add some padding for separation */
+    padding-top: 100px;
   }
 
 /* Footer */
