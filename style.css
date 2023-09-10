@@ -142,6 +142,9 @@ footer {
     .header {
         align-items: column;
     }
+    .research-container {
+        grid-template-columns: 1fr; /* Creates a 1-column grid */
+      }
 }
 @media screen and (max-width: 768px) { 
     .content {
