@@ -43,7 +43,7 @@ header {
     background-color: #0D3455;  /* Dark Blue */
     color: #FFFFFF;  /* White for Contrast */
     text-align: center;
-    flex-direction: column;
+    /*flex-direction: column;*/
     padding: 1em;
     font-size: 1em;
     display: flex;
@@ -141,8 +141,8 @@ footer {
 /* Responsiveness */
 @media screen and (max-width: 970px) { 
     .header {
+        background-color: #3f6b8e;  
         flex-direction: column;
-        font-size: 1em;
     }
     .research-container {
         grid-template-columns: 1fr; /* Creates a 1-column grid */
