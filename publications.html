@@ -8,15 +8,22 @@
 <body>
     <header>
         <div class="name-section">
-            <span>Annika McDermott Hinman</span>
+            <span>Annika McDermott-Hinman</span>
         </div>
-        <nav class="nav-bar">
+        <button class="hamburger-menu" onclick="toggleMenu()">☰</button> <!-- Hamburger icon -->
+        <nav class="nav-bar desktop-nav">
             <!-- Navigation Buttons -->
             <a href="index.html" class="nav-button">About Me</a>
             <a href="research.html" class="nav-button">Research Projects</a>
             <a href="publications.html" class="nav-button">Publications</a>
             <a href="cv.pdf" class="nav-button" target="_blank">CV</a>
         </nav>
+        <ul class="mobile-nav">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="research.html">Research Projects</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="cv.pdf" target="_blank">CV</a></li>
+        </ul>
     </header>
 </body>
 </html>
