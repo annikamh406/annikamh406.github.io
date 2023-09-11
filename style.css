@@ -103,7 +103,7 @@ font-size: 1.2em; /* Slightly larger font */
   }
 
 .left-section {
-    flex: 1;  /* Take up 1 portion of the available space */
+    flex: 2;  /* Take up 1 portion of the available space */
     max-width: 50%;  /* Limit width to 50% of the container */
     overflow: hidden;  /* Hide any overflowing content */
     justify-content: center; /* Horizontally center the content */
@@ -122,7 +122,7 @@ font-size: 1.2em; /* Slightly larger font */
   }
   
   .right-section {
-    flex: 1;  /* Take up 1 portion of the available space */
+    flex: 3;  /* Take up 1 portion of the available space */
     padding-left: 100px;  /* Add some padding for separation */
     padding-top: 100px;
   }
