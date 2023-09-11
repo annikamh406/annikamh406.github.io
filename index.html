@@ -11,12 +11,20 @@
         <div class="name-section">
             <span>Annika McDermott-Hinman</span>
         </div>
-        <nav class="nav-bar">
+        <nav class="nav-bar desktop-nav">
             <!-- Navigation Buttons -->
             <a href="index.html" class="nav-button">About Me</a>
             <a href="research.html" class="nav-button">Research Projects</a>
             <a href="publications.html" class="nav-button">Publications</a>
             <a href="cv.pdf" class="nav-button" target="_blank">CV</a>
+        </nav>
+        <nav class="nav-bar mobile-nav">
+            <select id="mobile-dropdown" onchange="location = this.value;">
+                <option value="index.html">About Me</option>
+                <option value="research.html">Research Projects</option>
+                <option value="publications.html">Publications</option>
+                <option value="cv.pdf">CV</option>
+            </select>
         </nav>
     </header>
     <div class="content">
