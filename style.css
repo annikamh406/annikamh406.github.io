@@ -80,16 +80,25 @@ nav a {
     gap: 16px; /* Space between buttons */
 }
 
-/* Hide mobile-nav by default */
-.mobile-nav {
-    display: none;
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none; /* Hide by default */
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-/* Define styles for the dropdown */
-#mobile-dropdown {
-    width: 100%;
+/* Mobile Nav */
+.mobile-nav {
+    display: none; /* Hidden by default */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav li {
     padding: 10px;
-    font-size: 1em;
 }
 
 .name-section span {
@@ -152,14 +161,12 @@ footer {
 
 /* Responsiveness */
 @media screen and (max-width: 970px) { 
-    /* Hide desktop-nav */
     .desktop-nav {
-        display: none;
+        display: none; /* Hide desktop-nav */
     }
-    
-    /* Show mobile-nav */
+    .hamburger-menu,
     .mobile-nav {
-        display: block;
+        display: block; /* Show hamburger and mobile nav */
     }
     .research-container {
         grid-template-columns: 1fr; /* Creates a 1-column grid */
