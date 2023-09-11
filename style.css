@@ -47,7 +47,7 @@ header {
     padding: 1em;
     font-size: 1em;
     display: flex;
-    /*justify-content: space-between; /* Positions content on the far ends */
+    justify-content: space-between; /* Positions content on the far ends */
     align-items: center; /* Vertically aligns the elements */
 }
 
