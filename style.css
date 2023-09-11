@@ -92,10 +92,20 @@ nav a {
 
 /* Mobile Nav */
 .mobile-nav {
-    display: none; /* Hidden by default */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    display: none; /* Hide by default, will be toggled by JavaScript */
+    background-color: white; /* White background */
+    width: 100%;  /* Take full width */
+    position: absolute;  /* Positioning relative to parent */
+    top: 100%;  /* Align to bottom of the parent, which should be your header */
+    left: 0;  /* Align to the left */
+    z-index: 1;  /* Z-index to appear on top of other content */
+}
+
+.mobile-nav a {
+    color: #0D3455; /* Dark blue text */
+    text-decoration: none; /* Removes the hyperlink underline */
+    display: block;  /* Makes each link take a full row */
+    padding: 8px;  /* Adds some padding around text */
 }
 
 .mobile-nav li {
@@ -171,16 +181,17 @@ footer {
     }
     .research-container {
         grid-template-columns: 1fr; /* Creates a 1-column grid */
-      }
+    }
+
+    .name-section {
+        align-items: center;
+    }
+    
+
 }
 @media screen and (max-width: 768px) { 
     .content {
         flex-direction: column;  /* Stack them on top of each other */
-    }
-
-    .header {
-        flex-direction: column;
-        font-size: 1em;
     }
     
     .container {
