@@ -175,8 +175,7 @@ footer {
     .desktop-nav {
         display: none; /* Hide desktop-nav */
     }
-    .hamburger-menu,
-    .mobile-nav {
+    .hamburger-menu {
         display: block; /* Show hamburger and mobile nav */
     }
     .research-container {
