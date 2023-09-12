@@ -167,7 +167,7 @@ font-size: 1.2em; /* Slightly larger font */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 5%; 
+    margin: 5%; 
 }
 
 /* Individual publication box */
