@@ -23,6 +23,16 @@ body {
     padding: 20px;
 }
 
+/* Normal state */
+#switchImage {
+    content: url("annika.png");
+  }
+  
+  /* Hover state */
+  .hover-image:hover #switchImage {
+    content: url("frog.png");
+  }
+
 .research-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Creates a 2-column grid */
