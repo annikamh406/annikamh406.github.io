@@ -173,6 +173,7 @@ font-size: 1.2em; /* Slightly larger font */
 .publication-box {
     width: 60%;
     border: 1px solid #ccc;
+    background-color: white;
     padding: 1em;
     margin: 1em;
     border-radius: 5px;
@@ -219,7 +220,15 @@ font-size: 1.2em; /* Slightly larger font */
     text-decoration: none;
 }
 
+.middot-divider {
+    padding-right: .45em;
+    padding-left: .45em;
+    font-size: 15px
+}
 
+.middot-divider::after {
+    content: '\00B7'
+}
 
 
 
