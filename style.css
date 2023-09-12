@@ -167,6 +167,7 @@ font-size: 1.2em; /* Slightly larger font */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 5%; 
 }
 
 /* Individual publication box */
@@ -175,7 +176,7 @@ font-size: 1.2em; /* Slightly larger font */
     border: 1px solid #ccc;
     background-color: white;
     padding: 1em;
-    margin: 0.5em;
+    margin: 1em;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
