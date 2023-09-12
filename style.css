@@ -160,6 +160,69 @@ font-size: 1.2em; /* Slightly larger font */
     padding-top: 100px;
   }
 
+  /* Publication container */
+
+  /* Container to wrap all publications */
+.publication-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual publication box */
+.publication-box {
+    width: 60%;
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+/* Authors' names at the top */
+.authors {
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+/* Date and Journal details */
+.pub-details {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.date, .journal {
+    margin-right: 1em;
+}
+
+/* Paper title */
+.pub-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0.7em 0;
+}
+
+/* Abstract text */
+.abstract {
+    font-size: 1em;
+    margin: 0.7em 0;
+}
+
+/* DOI button */
+.doi-button {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #1F4E60;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+
+
+
+
 /* Footer */
 footer {
     background-color: #2F4F4F;  /* Dark Slate Grey */
@@ -172,7 +235,7 @@ footer {
 }
 
 /* Responsiveness */
-@media screen and (max-width: 970px) { 
+@media screen and (max-width: 1000px) { 
     .desktop-nav {
         display: none; /* Hide desktop-nav */
     }
