@@ -49,7 +49,7 @@ header {
     display: flex;
     justify-content: space-between; /* Positions content on the far ends */
     align-items: center; /* Vertically aligns the elements */
-    position: fixed;
+    position: relative;
 }
 
 /* Navigation */
