@@ -172,7 +172,6 @@ font-size: 1.2em; /* Slightly larger font */
 
 /* Individual publication box */
 .publication-box {
-    width: 60%;
     border: 1px solid #ccc;
     background-color: white;
     padding: 1em;
