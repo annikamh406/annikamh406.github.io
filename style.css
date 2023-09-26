@@ -48,6 +48,11 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds subtle shadow for depth */
   }
 
+  .research-box img{
+    width: 80%;
+    height: auto;  /* Maintain aspect ratio */
+  }
+
 /* Header */
 header {
     background-color: #0D3455;  /* Dark Blue */
