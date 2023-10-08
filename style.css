@@ -52,6 +52,7 @@ body {
   .research-box img{
     width: 80%;
     height: auto;  /* Maintain aspect ratio */
+    margin: auto;
   }
 
 /* Header */
