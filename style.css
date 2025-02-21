@@ -27,7 +27,7 @@ body {
 #switchImage {
     content: url("annika.png");
   }
-  
+
   /* Hover state */
   .hover-image:hover #switchImage {
     content: url("frog.png");
@@ -41,7 +41,7 @@ body {
     max-width: 90%; /* Limits the width of the container */
     margin: auto; /* Centers the container */
   }
-  
+
   .research-box {
     background-color: #D9D9D9; /* Slightly darker grey than the background */
     padding: 20px; /* Inner padding for the content */
@@ -161,7 +161,7 @@ font-size: 1.2em; /* Slightly larger font */
     flex-direction: column; /* Stack the content vertically */
     margin: 20px;  /* Add margin to create white space */
   }
-  
+
   .left-section img {
     width: 70%;  /* Make the image responsive, taking up full width of the .left-section */
     height: auto;  /* Maintain aspect ratio */
@@ -170,10 +170,11 @@ font-size: 1.2em; /* Slightly larger font */
   figure {
     text-align: center; /* Centers the caption text */
   }
-  
+
   .right-section {
     flex: 3;  /* Take up 1 portion of the available space */
     padding-left: 100px;  /* Add some padding for separation */
+    padding-right: 50px;
     padding-top: 100px;
   }
 
@@ -184,7 +185,7 @@ font-size: 1.2em; /* Slightly larger font */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5%; 
+    margin: 5%;
 }
 
 /* Individual publication box */
@@ -261,7 +262,7 @@ footer {
 }
 
 /* Responsiveness */
-@media screen and (max-width: 1000px) { 
+@media screen and (max-width: 1000px) {
     .desktop-nav {
         display: none; /* Hide desktop-nav */
     }
@@ -275,14 +276,14 @@ footer {
     .name-section {
         align-items: center;
     }
-    
+
 
 }
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
     .content {
         flex-direction: column;  /* Stack them on top of each other */
     }
-    
+
     .container {
         padding: 10px;
     }
