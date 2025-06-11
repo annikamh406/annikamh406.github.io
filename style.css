@@ -15,6 +15,8 @@ body {
     padding: 20px;
 }
 
+.sc          { font-variant: small-caps; }
+
 /* Container */
 .container {
     max-width: 960px;
@@ -35,7 +37,7 @@ body {
 
 .research-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Creates a 2-column grid */
+    grid-template-columns: 1fr; /* Creates a 2-column grid */
     grid-gap: 16px; /* Space between each box */
     padding: 16px; /* Padding around the grid */
     max-width: 90%; /* Limits the width of the container */
@@ -44,7 +46,7 @@ body {
 
   .research-box {
     background-color: #D9D9D9; /* Slightly darker grey than the background */
-    padding: 20px; /* Inner padding for the content */
+    padding: 40px; /* Inner padding for the content */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds subtle shadow for depth */
     align-items: center;
   }
@@ -54,6 +56,27 @@ body {
     height: auto;  /* Maintain aspect ratio */
     margin: auto;
   }
+
+
+/* 1. Paragraphs: space and first-line indent */
+.research-box p{
+    margin: 0 0 1em;      /* bottom-only space between paragraphs */
+}
+
+/* 2. Ordered list: pull the numbers inside the text block
+      and make the whole list sit at the same indent
+      as the paragraphs above */
+.research-box ol{
+    list-style-position: inside; /* marker appears inside the content box */
+    margin: 0 0 1em;             /* bottom space like regular paragraphs */
+}
+
+/* 3. List items: add vertical breathing room and
+      keep text flush with list markers */
+.research-box li{
+    margin-bottom: 0.75em; /* space between list items */
+    padding-left: 1.5em;   /* keeps the rest of the item’s lines aligned */
+}
 
 /* Header */
 header {
