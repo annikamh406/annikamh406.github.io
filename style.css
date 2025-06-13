@@ -164,7 +164,7 @@ font-size: 1.2em; /* Slightly larger font */
     color: #0D3455;
 }
 
-.main-content h2, .main-content h3 {
+.main-content h2, .main-content h3, .main-content h4 {
     margin-top: 20px;
     margin-bottom: 20px;
     color: #0D3455;
@@ -313,13 +313,13 @@ footer {
     .left-section, .right-section {
         max-width: 100%;
         flex: 1;
-        margin: 5px;
+        margin: 0px;
         padding: 5px;
     }
 
     .right-section {
-        padding-left: 20px;
-        padding-top: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
     }
 
     .left-section img {
