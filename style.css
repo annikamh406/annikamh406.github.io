@@ -317,17 +317,13 @@ footer {
         padding: 5px;
     }
 
-    .right-section, .right-section {
-        padding-left: 0px;
-        padding-top: 0px;
-    }
-
     .left-section img,
     .right-section img{
         width: 90%;          /* was 80 % */
         max-width: 600px;    /* safety cap */
         height: auto;
         margin: 0.5em auto;  /* keep centred */
+        justify-items: center;
     }
     .research-box img{
         max-width: 100%;   /* let it fill the box */
@@ -335,13 +331,20 @@ footer {
     }
 
 
-    .research-box, .publication-box{
+    .research-box{
         padding: 16px 8px;    /* top/bottom 16 px, left/right 8 px  */
+        margin: 3px auto;
+    }
+
+    .publication-box{
+        padding: 16px 8px;    /* top/bottom 16 px, left/right 8 px  */
+        margin: 3px 5px;
     }
 
     .research-container, .publication-container{
         padding: 16px 0px;    /* top/bottom 16 px, left/right 8 px  */
-        margin: 0px 0px
+        margin: 0 auto;
+        justify-items: center;
     }
 
     .main-content h2{
