@@ -317,12 +317,36 @@ footer {
         padding: 5px;
     }
 
-    .right-section {
-        padding-left: 10px;
-        padding-top: 10px;
+    .right-section, .right-section {
+        padding-left: 0px;
+        padding-top: 0px;
     }
 
-    .left-section img {
-        width: 50%;
+    .left-section img,
+    .right-section img{
+        width: 90%;          /* was 80 % */
+        max-width: 600px;    /* safety cap */
+        height: auto;
+        margin: 0.5em auto;  /* keep centred */
     }
+    .research-box img{
+        max-width: 100%;   /* let it fill the box */
+        width: 100%;       /* or 90% if you want a bit of gutter */
+    }
+
+
+    .research-box, .publication-box{
+        padding: 16px 8px;    /* top/bottom 16 px, left/right 8 px  */
+    }
+
+    .research-container, .publication-container{
+        padding: 16px 0px;    /* top/bottom 16 px, left/right 8 px  */
+        margin: 0px 0px
+    }
+
+    .main-content h2{
+        text-align: center;
+    }
+    .right-section h2{ text-align:center; }
+
 }
