@@ -52,9 +52,9 @@ body {
   }
 
   .research-box img{
-    width: 80%;
-    height: auto;  /* Maintain aspect ratio */
-    margin: auto;
+      display: block;        /* makes the <img> take up its own line */
+      margin: 0.5em auto;    /* top / bottom spacing, auto left-right = centred */
+      max-width: 80%;       /* stays responsive, won’t spill out of the box */
   }
 
 
@@ -308,7 +308,7 @@ footer {
     }
 
     .container {
-        padding: 10px;
+        padding: 5px;
     }
     .left-section, .right-section {
         max-width: 100%;
