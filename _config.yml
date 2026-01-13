@@ -6,4 +6,4 @@ plugins:
 # ---------- Site-wide metadata (used by jekyll-seo-tag) ----------
 title: "Annika McDermott-Hinman"
 description: "Cognitive & language-development researcher exploring how children acquire negation and abstract concepts."
-url: "https://annikamh406.github.io"      # ← leave exactly this unless you move to a custom domain
+url: "https://annika-mcdermott-hinman.com"
