@@ -244,6 +244,14 @@ font-size: 1.2em; /* Slightly larger font */
     margin: 0.7em 0;
 }
 
+/* Paper subtitle */
+.pub-subtitle {
+    font-size: 1.1em;
+    font-weight: normal;
+    font-style: italic;
+    margin: -0.3em 0 0.7em;
+}
+
 /* Abstract text */
 .abstract {
     font-size: 1em;
