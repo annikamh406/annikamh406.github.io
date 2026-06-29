@@ -167,18 +167,77 @@ function renderBracket(name) {
       <img class="fullphoto" src="${PHOTOS[name]}" alt="${name}'s bracket"></details>`;
 }
 
+/* ---------- Actual results bracket (the real tournament) ---------- */
+function actualParticipants(matchId) {
+  const m = BRACKET[matchId];
+  if (m.teams) return m.teams.slice();
+  return m.feeds.map(f => RESULTS[f] || null);
+}
+function actualTeamBox(matchId, team) {
+  if (!team) return `<div class="team empty">TBD</div>`;
+  const won = RESULTS[matchId] === team;
+  return `<div class="team${won ? " picked actual-win" : ""}">${team}</div>`;
+}
+function actualMatchBox(matchId, side) {
+  const [a, b] = actualParticipants(matchId);
+  return `<div class="match ${side}" title="Match ${matchId}">
+            ${actualTeamBox(matchId, a)}${actualTeamBox(matchId, b)}
+          </div>`;
+}
+function actualColumn(ids, side) {
+  return `<div class="col">${ids.map(id => actualMatchBox(id, side)).join("")}</div>`;
+}
+function renderResults() {
+  const L = LAYOUT.left, R = LAYOUT.right;
+  const center = `
+    <div class="col center">
+      <div class="final-wrap">
+        <div class="final-label">FINAL</div>
+        ${actualMatchBox("F", "center")}
+        <div class="champ-tag">🏆 Champion: <strong>${RESULTS.F || "TBD"}</strong></div>
+      </div>
+      <div class="third-wrap">
+        <div class="final-label">3rd place</div>
+        <div class="team${RESULTS.third ? " picked actual-win" : ""}">${RESULTS.third || "TBD"}</div>
+      </div>
+    </div>`;
+  const tree = `
+    <div class="bracket">
+      ${actualColumn(L.R32, "left")}${actualColumn(L.R16, "left")}${actualColumn(L.QF, "left")}${actualColumn(L.SF, "left")}
+      ${center}
+      ${actualColumn(R.SF, "right")}${actualColumn(R.QF, "right")}${actualColumn(R.R16, "right")}${actualColumn(R.R32, "right")}
+    </div>`;
+  const ids = Object.keys(BRACKET);
+  const played = ids.filter(id => RESULTS[id] != null).length;
+  document.getElementById("resultsView").innerHTML = `
+    <h2>Actual results</h2>
+    <p class="note">${played} of ${ids.length} knockout matches decided. Winners are highlighted; upcoming matchups appear once both teams are known.</p>
+    <div class="scroll-hint">← scroll to see the full bracket →</div>
+    ${tree}`;
+}
+
 /* ---------- Navigation ---------- */
+const SECTIONS = ["boardSection", "playerSection", "resultsSection"];
+function show(section) {
+  SECTIONS.forEach(id => document.getElementById(id).classList.toggle("hidden", id !== section));
+}
+
 function selectPlayer(name) {
   document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.player === name));
-  document.getElementById("boardSection").classList.add("hidden");
-  document.getElementById("playerSection").classList.remove("hidden");
+  show("playerSection");
   renderBracket(name);
   window.scrollTo({ top: document.getElementById("playerSection").offsetTop - 10, behavior: "smooth" });
 }
 
+function showResults() {
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.classList.contains("results-tab")));
+  show("resultsSection");
+  renderResults();
+  window.scrollTo({ top: document.getElementById("resultsSection").offsetTop - 10, behavior: "smooth" });
+}
+
 function showBoard() {
-  document.getElementById("playerSection").classList.add("hidden");
-  document.getElementById("boardSection").classList.remove("hidden");
+  show("boardSection");
   document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
 }
 
@@ -186,6 +245,7 @@ function buildTabs() {
   const wrap = document.getElementById("tabs");
   wrap.innerHTML =
     `<button class="tab board-tab" onclick="showBoard()">🏆 Leaderboard</button>` +
+    `<button class="tab results-tab" onclick="showResults()">📋 Results</button>` +
     PLAYERS.map(n => `<button class="tab" data-player="${n}" onclick="selectPlayer('${n}')">${n}</button>`).join("");
 }
 

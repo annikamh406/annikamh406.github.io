@@ -79,6 +79,7 @@ a{color:#8ab4ff}
 .team.picked{color:var(--ink);font-weight:700;background:rgba(59,130,246,.16)}
 .team.picked.correct{background:rgba(34,197,94,.22);color:#bbf7d0}
 .team.picked.wrong{background:rgba(239,68,68,.18);color:#fecaca}
+.team.picked.actual-win{background:rgba(251,191,36,.20);color:#fde68a}
 .final-label{text-align:center;font-size:11px;letter-spacing:2px;color:var(--muted);margin-bottom:4px}
 .final-wrap .match{border-color:var(--gold)}
 .champ-tag{text-align:center;font-size:13px;margin-top:8px;color:var(--ink)}
