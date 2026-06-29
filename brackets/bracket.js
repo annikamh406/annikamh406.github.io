@@ -20,7 +20,7 @@ function statusFor(picks, matchId) {
 
 /* Total score + per-round breakdown for one player */
 function scoreFor(picks) {
-  const breakdown = { R32: 0, R16: 0, QF: 0, SF: 0, FINAL: 0, CHAMPION: 0 };
+  const breakdown = { R32: 0, R16: 0, QF: 0, SF: 0, FINAL: 0 };
   let correct = 0, decided = 0;
   for (const id in BRACKET) {
     const actual = RESULTS[id];
@@ -31,8 +31,6 @@ function scoreFor(picks) {
       breakdown[BRACKET[id].round] += SCORING[BRACKET[id].round];
     }
   }
-  // Champion bonus (on top of the Final points)
-  if (RESULTS.F != null && picks.F === RESULTS.F) breakdown.CHAMPION += SCORING.CHAMPION_BONUS;
   const total = Object.values(breakdown).reduce((a, b) => a + b, 0);
   const thirdCorrect = RESULTS.third != null && picks.third === RESULTS.third;
   return { total, breakdown, correct, decided, thirdCorrect };
@@ -80,7 +78,7 @@ function renderLeaderboard() {
     html += `<p class="note">No match results entered yet — everyone sits at 0.
       Standings will move as results are filled in. Tap any row to see that bracket.</p>`;
   } else {
-    html += `<p class="note">Tap any row to open that person's full bracket. Max possible: 1120 pts.</p>`;
+    html += `<p class="note">Tap any row to open that person's full bracket. Max possible: 800 pts.</p>`;
   }
   document.getElementById("leaderboard").innerHTML = html;
 
@@ -149,7 +147,7 @@ function renderBracket(name) {
       <div class="ptotal">${s.total} <span>pts</span></div>
       <div class="bdwrap">
         ${breakdownRow("R32", bd.R32)}${breakdownRow("R16", bd.R16)}${breakdownRow("QF", bd.QF)}
-        ${breakdownRow("SF", bd.SF)}${breakdownRow("Final", bd.FINAL)}${breakdownRow("Champ", bd.CHAMPION)}
+        ${breakdownRow("SF", bd.SF)}${breakdownRow("Final", bd.FINAL)}
       </div>
     </div>`;
 

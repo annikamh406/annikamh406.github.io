@@ -20,12 +20,11 @@
 
 /* ---- Scoring: points per correctly predicted match winner --------------- */
 const SCORING = {
-  R32: 10,   // Round of 32  (16 matches)
-  R16: 20,   // Round of 16  (8 matches)
-  QF:  40,   // Quarterfinals (4 matches)
-  SF:  80,   // Semifinals   (2 matches)
-  FINAL: 160, // Final        (1 match)
-  CHAMPION_BONUS: 320 // extra, on top of the 160, for naming the champion
+  R32: 10,    // Round of 32   (16 matches)
+  R16: 20,    // Round of 16   (8 matches)
+  QF:  40,    // Quarterfinals (4 matches)
+  SF:  80,    // Semifinals    (2 matches)
+  FINAL: 160  // Final         (1 match) — picking the champion correctly
 };
 
 
