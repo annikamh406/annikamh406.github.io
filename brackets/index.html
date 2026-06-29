@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hidden page: keep it out of search engines -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>The Heist Team — 2026 World Cup Bracket</title>
+  <link rel="stylesheet" href="bracket.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="ball">⚽🏆</div>
+      <h1>The Heist Team</h1>
+      <p class="sub">2026 Men's World Cup — bracket pool &amp; leaderboard</p>
+    </div>
+
+    <div id="tabs"></div>
+
+    <!-- Leaderboard + rules -->
+    <section id="boardSection">
+      <div class="panel" id="leaderboard"></div>
+
+      <div class="panel rules">
+        <h2>How scoring works</h2>
+        <p>You earn points for every match winner you picked correctly. Points
+           <strong>double each round</strong>, so calling the deep runs is what wins it.</p>
+        <table>
+          <tr><td>Round of 32 — each correct pick</td><td>10</td></tr>
+          <tr><td>Round of 16 — each correct pick</td><td>20</td></tr>
+          <tr><td>Quarterfinal — each correct pick</td><td>40</td></tr>
+          <tr><td>Semifinal — each correct pick</td><td>80</td></tr>
+          <tr><td>Final — correct pick</td><td>160</td></tr>
+          <tr><td>Naming the Champion — bonus</td><td>320</td></tr>
+          <tr><td><strong>Maximum possible</strong></td><td><strong>1120</strong></td></tr>
+        </table>
+        <p class="note"><strong>Tiebreaker:</strong> if two people are level on points,
+          whoever correctly picked the <strong>third-place</strong> finisher ranks higher.</p>
+      </div>
+    </section>
+
+    <!-- Individual bracket -->
+    <section id="playerSection" class="hidden">
+      <div class="panel" id="bracketView"></div>
+    </section>
+
+    <footer>Heist Team only · unlisted page · pick 'em or weep</footer>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="bracket.js"></script>
+</body>
+</html>
