@@ -85,6 +85,13 @@ const LAYOUT = {
 /* For each match number, the team that person picked to win.                */
 /* "F" = final winner (champion). "third" = third-place pick (tiebreaker).   */
 const PICKS = {
+  Alec: {
+    74:"Germany",77:"France",73:"Canada",75:"Netherlands",83:"Portugal",84:"Spain",81:"United States",82:"Senegal",
+    76:"Brazil",78:"Ivory Coast",79:"Mexico",80:"England",86:"Argentina",88:"Egypt",85:"Switzerland",87:"Colombia",
+    89:"France",90:"Netherlands",93:"Spain",94:"United States",91:"Brazil",92:"England",95:"Argentina",96:"Colombia",
+    97:"France",98:"Spain",99:"England",100:"Argentina",
+    101:"France",102:"England",F:"France",third:"Spain"
+  },
   Annika: {
     74:"Germany",77:"France",73:"Canada",75:"Netherlands",83:"Croatia",84:"Spain",81:"United States",82:"Belgium",
     76:"Brazil",78:"Norway",79:"Mexico",80:"England",86:"Argentina",88:"Egypt",85:"Switzerland",87:"Colombia",
@@ -152,6 +159,7 @@ const PICKS = {
 
 /* Photo filename for each player (shown on their bracket view) */
 const PHOTOS = {
+  Alec:"Alec.JPEG",
   Annika:"Annika.jpg", Alicia:"Alicia.jpg", Chris:"Chris.jpg", Davis:"Davis.jpg",
   Graham:"Graham.png", Jake:"Jake.jpg", Joyce:"Joyce.jpg", Justin:"Justin.jpg", Veronika:"Veronika.jpg"
 };
