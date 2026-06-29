@@ -139,7 +139,7 @@ const PICKS = {
     76:"Brazil",78:"Norway",79:"Mexico",80:"England",86:"Argentina",88:"Egypt",85:"Algeria",87:"Colombia",
     89:"France",90:"Netherlands",93:"Spain",94:"United States",91:"Norway",92:"England",95:"Argentina",96:"Colombia",
     97:"France",98:"Spain",99:"England",100:"Argentina",
-    101:"France",102:"England",F:"France",third:"Argentina"
+    101:"France",102:"England",F:"England",third:"Argentina"
   },
   Veronika: {
     74:"Germany",77:"France",73:"Canada",75:"Netherlands",83:"Portugal",84:"Spain",81:"United States",82:"Belgium",
