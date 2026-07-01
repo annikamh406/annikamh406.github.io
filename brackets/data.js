@@ -170,8 +170,8 @@ const PHOTOS = {
    ========================================================================== */
 const RESULTS = {
   // --- Round of 32 ---
-  74: "Paraguay", 77: null, 73: "Canada", 75: "Morocco", 83: null, 84: null, 81: null, 82: null,
-  76: "Brazil", 78: null, 79: null, 80: null, 86: null, 88: null, 85: null, 87: null,
+  74: "Paraguay", 77: "France", 73: "Canada", 75: "Morocco", 83: null, 84: null, 81: null, 82: null,
+  76: "Brazil", 78: "Norway", 79: "Mexico", 80: null, 86: null, 88: null, 85: null, 87: null,
   // --- Round of 16 ---
   89: null, 90: null, 93: null, 94: null, 91: null, 92: null, 95: null, 96: null,
   // --- Quarterfinals ---
