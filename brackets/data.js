@@ -171,7 +171,7 @@ const PHOTOS = {
 const RESULTS = {
   // --- Round of 32 ---
   74: "Paraguay", 77: "France", 73: "Canada", 75: "Morocco", 83: "Portugal", 84: "Spain", 81: "United States", 82: "Belgium",
-  76: "Brazil", 78: "Norway", 79: "Mexico", 80: "England", 86: null, 88: null, 85: "Switzerland", 87: null,
+  76: "Brazil", 78: "Norway", 79: "Mexico", 80: "England", 86: null, 88: "Egypt", 85: "Switzerland", 87: null,
   // --- Round of 16 ---
   89: null, 90: null, 93: null, 94: null, 91: null, 92: null, 95: null, 96: null,
   // --- Quarterfinals ---
