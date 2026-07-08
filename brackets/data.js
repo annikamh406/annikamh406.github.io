@@ -173,7 +173,7 @@ const RESULTS = {
   74: "Paraguay", 77: "France", 73: "Canada", 75: "Morocco", 83: "Portugal", 84: "Spain", 81: "United States", 82: "Belgium",
   76: "Brazil", 78: "Norway", 79: "Mexico", 80: "England", 86: "Argentina", 88: "Egypt", 85: "Switzerland", 87: "Colombia",
   // --- Round of 16 ---
-  89: "France", 90: "Morocco", 93: "Spain", 94: "Belgium", 91: "Norway", 92: "England", 95: null, 96: null,
+  89: "France", 90: "Morocco", 93: "Spain", 94: "Belgium", 91: "Norway", 92: "England", 95: "Argentina", 96: "Switzerland",
   // --- Quarterfinals ---
   97: null, 98: null, 99: null, 100: null,
   // --- Semifinals ---
