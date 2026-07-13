@@ -175,7 +175,7 @@ const RESULTS = {
   // --- Round of 16 ---
   89: "France", 90: "Morocco", 93: "Spain", 94: "Belgium", 91: "Norway", 92: "England", 95: "Argentina", 96: "Switzerland",
   // --- Quarterfinals ---
-  97: "France", 98: "Spain", 99: null, 100: null,
+  97: "France", 98: "Spain", 99: "England", 100: "Argentina",
   // --- Semifinals ---
   101: null, 102: null,
   // --- Final (champion) ---
