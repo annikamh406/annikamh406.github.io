@@ -177,9 +177,9 @@ const RESULTS = {
   // --- Quarterfinals ---
   97: "France", 98: "Spain", 99: "England", 100: "Argentina",
   // --- Semifinals ---
-  101: "Spain", 102: null,
+  101: "Spain", 102: "Argentina",
   // --- Final (champion) ---
-  F: null,
+  F: "Spain",
   // --- Third-place match winner (tiebreaker only) ---
-  third: null
+  third: "England"
 };
